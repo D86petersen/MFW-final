@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script&family=Open+Sans+Condensed:wght@300&display=swap"
+    rel="stylesheet">
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/d5fdc24f4a.js" crossorigin="anonymous"></script>
+
+  <title>Travel Anywhere</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/flights.css">
+</head>
+
+<body>
+ <!-- navbar start -->
+ <nav class="navbar navbar-light navbar-expand-xl bg-faded justify-content-center">
+  <div class="container-fluid mx-5">
+    <img src="/img/LogoMakr-4h6oJ1.png" alt="">
+    <a href="index.html" class="navbar-brand d-flex w-50 me-auto fs-4 fw-bold">Travel Anywhere</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+      <ul class="navbar-nav w-100 justify-content-between fw-bolder">
+        <li class="nav-item">
+          <a class="nav-link" href="destinations.html">Destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hotels.html">Hotels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="flights.html">Flights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+  <header>
+
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+  
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="/img/vecteezy_view-of-airplane-wing-flying-over-clouds-with-sun-setting_1624325.mp4" type="video/mp4">
+    </video>
+  
+    <!-- The header content -->
+    <div class="container bg-transparent h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100">
+          <h1 class="display-1 text-white cursivemain1">Flights</h1>
+          <p class="lead fs-3 text-white cursive mb-0">We know how horrible lay-overs and jet lag can be. Let us find you the right flight for the right price.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- flight search form -->
+  <section>
+    <div class="wrapper bg-white">
+      <form action="#">
+        <div class="container-fluid p-5">
+          <div class="row">
+            <div class="col d-flex flex-column m-5">
+              <h5 class="text-primary text-center">Book with us</h5>
+              <h2 class="cursivemain text-center fs-1">Search for your perfect flight </h2>
+            </div>
+          </div>
+          <div class="container-fluid border p-5">
+          <div class="form-group border-bottom d-flex align-items-center justify-content-between flex-wrap"> <label class="option my-sm-0 my-2"> <input type="radio" name="radio" checked>Round Trip <span class="checkmark"></span> </label> <label class="option my-sm-0 my-2"> <input type="radio" name="radio">One Way <span class="checkmark"></span> </label>
+              <div class="d-flex align-items-center my-sm-0 my-2"> <a href="#" class="text-decoration-none"> Multi-city/Stopovers <span class="fas fa-angle-right ps-2 text-primary"></span> </a> </div>
+          </div>
+          <div class="form-group d-sm-flex margin">
+              <div class="d-flex align-items-center flex-fill me-sm-1 my-sm-0 my-4 border-bottom position-relative"> <input type="text" required placeholder="From" class="form-control">
+                  <div class="label" id="from"></div> <span class="fas fa-dot-circle text-muted"></span>
+              </div>
+              <div class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative"> <input type="text" required placeholder="To" class="form-control">
+                  <div class="label" id="to"></div> <span class="fas fa-map-marker text-muted"></span>
+              </div>
+          </div>
+          <div class="form-group d-sm-flex margin">
+              <div class="d-flex align-items-center flex-fill me-sm1 my-sm-0 border-bottom position-relative"> <input type="date" required placeholder="Depart Date" class="form-control">
+                  <div class="label" id="depart"></div>
+              </div>
+              <div class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative"> <input type="date" required placeholder="Return Date" class="form-control">
+                  <div class="label" id="return"></div>
+              </div>
+          </div>
+          <div class="form-group border-bottom d-flex align-items-center position-relative"> <input type="text" required placeholder="Traveller(s)" class="form-control">
+              <div class="label" id="psngr"></div> <span class="fas fa-users text-muted"></span>
+          </div>
+          <div class="form-group my-3">
+              <div class="btn btn-primary rounded-0 d-flex justify-content-center text-center p-3">Search Flights </div>
+          </div>
+      </form>
+  </div>
+  </section>
+<hr>
+<!-- find a flight section -->
+  <section>
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col d-flex flex-column m-5">
+          <h5 class="text-primary">Find your Flight</h5>
+          <h2 class="cursivemain fs-1">We offer the best prices on airfare</h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col d-inline-flex flex-column m-5 align-items-center">
+          <img src="/img/y2018-12-17-24_generated.jpg" alt="">
+          <h5 class="cursivemain fs-2 mt-5">Cheap flights</h5>
+          <p class="cursive text-muted fs-5">We offer the best pricing in airfare of any travel company around.</p>
+        </div>
+        <div class="col d-inline-flex flex-column m-5 align-items-center">
+          <img src="/img/3118_R1NUIENBUiAyNTUzLTQx.jpg" alt="">
+          <h5 class="cursivemain fs-2 mt-5">Round trip tickets</h5>
+          <p class="cursive text-muted fs-5">We help find you the best price to get you to and from your destination.</p>
+        </div>
+        <div class="col d-inline-flex flex-column m-5 align-items-center">
+          <img src="/img/Project_181-01_generated.jpg" alt="">
+          <h5 class="cursivemain fs-2 mt-5">First class luxury</h5>
+          <p class="cursive text-muted fs-5">We offer some of the most luxurious first class packages in the industry.</p>
+        </div>
+<!-- our partners -->
+      </div>
+    </div>
+  </section>
+  <hr>
+  <section>
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col d-flex flex-column m-5">
+          <h5 class="text-primary">Our Partners</h5>
+          <h2 class="cursivemain fs-1">We offer flights with these airlines</h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col d-inline-flex flex-column m-5 align-items-center">
+          <img src="/img/united.png" alt="">
+          <h5 class="cursivemain fs-2 mt-5">United Airlines</h5>
+         
+        </div>
+        <div class="col d-inline-flex flex-column m-5 align-items-center">
+          <img src="/img/southwest.png" alt="">
+          <h5 class="cursivemain fs-2 mt-5">Southwest Airlines</h5>
+          
+        </div>
+        <div class="col d-inline-flex flex-column m-5 align-items-center">
+          <img src="/img/american.jpg" alt="">
+          <h5 class="cursivemain fs-2 mt-5">American Airlines</h5>
+          
+        </div>
+        <div class="col d-inline-flex flex-column m-5 align-items-center">
+          <img src="/img/allegiant.png" alt="">
+          <h5 class="cursivemain fs-2 mt-5">Allegiant Air</h5>
+          >
+        </div>
+        <div class="col d-inline-flex flex-column m-5 align-items-center">
+          <img src="/img/jetblue.png" alt="">
+          <h5 class="cursivemain fs-2 mt-5">Jet Blue</h5>
+          
+        </div>
+        <div class="col d-inline-flex flex-column m-5 align-items-center">
+          <img src="/img/alaska.jpg" alt="">
+          <h5 class="cursivemain fs-2 mt-5">Alaska Airlines</h5>
+          
+        </div><div class="col d-inline-flex flex-column m-5 align-items-center">
+          <img src="/img/frontier.jpg" alt="">
+          <h5 class="cursivemain fs-2 mt-5">Fontier Airlines</h5>
+          
+        </div><div class="col d-inline-flex flex-column m-5 align-items-center">
+          <img src="/img/SkyWestIncLogo-640x360.jpg" alt="">
+          <h5 class="cursivemain fs-2 mt-5">SkyWest Airlines</h5>
+          
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+  <div class="container-fluid border-top my-5">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-dark">
+      <!-- Grid container -->
+      <div class="container-fluid p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+              <img src="/img/LogoMakr-4h6oJ1.png" alt="">
+              <h6 class="text-uppercase font-weight-bold">
+                Travel Anywhere
+              </h6>
+              <p>
+                We take pride in being the one place you can go for all of your travel and booking needs.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+              <p>
+                <a class="text-black" href="destinations.html">Destinations</a>
+              </p>
+              <p>
+                <a class="text-black" href="hotels.html">Hotels</a>
+              </p>
+              <p>
+                <a class="text-black" href="flights.html">Flights</a>
+              </p>
+              <p>
+                <a class="text-black" href="login.html">Login</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none" />
+            
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><i class="fas fa-home mr-3"></i> Fresno, CA 93728, US</p>
+              <p><i class="fas fa-envelope mr-3"></i> d86petersen@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> 1-559-123-4567</p>
+              <p><i class="fas fa-print mr-3"></i> 1-559-123-4567</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="my-3">
+
+        <!-- Section: Copyright -->
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center">
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <!-- Copyright -->
+              <div class="p-3">
+                © 2020 Copyright:
+                <a class="text-black" href="https://github.com/D86petersen?tab=repositories">Dustin Petersen Web Design</a>
+              </div>
+              <!-- Copyright -->
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <!-- Facebook -->
+              <a class="btn btn-outline-dark btn-floating m-1" class="text-black" role="button"><i
+                  class="fab fa-facebook-f"></i></a>
+
+              <!-- Twitter -->
+              <a class="btn btn-outline-dark btn-floating m-1" class="text-white" role="button"><i
+                  class="fab fa-twitter"></i></a>
+
+              <!-- Google -->
+              <a class="btn btn-outline-dark btn-floating m-1" class="text-white" role="button"><i
+                  class="fab fa-google"></i></a>
+
+              <!-- Instagram -->
+              <a class="btn btn-outline-dark btn-floating m-1" class="text-white" role="button"><i
+                  class="fab fa-instagram"></i></a>
+            </div>
+            <!-- Grid column -->
+          </div>
+        </section>
+        <!-- Section: Copyright -->
+      </div>
+      <!-- Grid container -->
+    </footer>
+    <!-- Footer -->
+  </div>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+
+
+
+</body>
+
+</html>

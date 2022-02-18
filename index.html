@@ -1,28 +1,441 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hello, world!</title>
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script&family=Open+Sans+Condensed:wght@300&display=swap"
+    rel="stylesheet">
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/d5fdc24f4a.js" crossorigin="anonymous"></script>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <title>Travel Anywhere</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<body>
+  <!-- navbar start -->
+  <nav class="navbar navbar-light navbar-expand-xl bg-faded justify-content-center">
+    <div class="container-fluid mx-5">
+      <img src="/img/LogoMakr-4h6oJ1.png" alt="">
+      <a href="index.html" class="navbar-brand d-flex w-50 me-auto fs-4 fw-bold">Travel Anywhere</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="navbar-nav w-100 justify-content-between fw-bolder">
+          <li class="nav-item">
+            <a class="nav-link" href="destinations.html">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hotels.html">Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="flights.html">Flights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- hero img start-->
+  <div class="mainwrapper hero">
+    <div class="image-overlay"></div>
+    <div class="container-fluid text-dark p-5">
+      <div class="row">
+        <div class="col-xxl-6 col-xl-6 col-l-6 col-md-6 col-sm-6  d-flex flex-column align-items-start m-5">
+          <h5 class="text-primary">BEST DESTINATIONS AROUND THE WORLD</h5>
+          <h1 class="display-3 text-white cursivemain1">It's your world. We'll help you explore it.</h1>
+          <p class="mt-5 text-white cursive fs-3">Dedicated to making travel as simple as possible. We help each and
+            every one of our clients to find the best options for flights, hotels and car rentals to make sure you have
+            a perfect trip! We pride ourselves on having the lowest pricing available! Wether your traveling locally or
+            internationally we've got you covered!</p>
+          <button class="btn btn-primary rounded-pill px-4 mt-5">Let's Explore!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- hero img end -->
+
+
+  <!-- Cards Start -->
+  <section>
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col d-flex flex-column m-5">
+          <h5 class="text-primary">Top Selling</h5>
+          <h2 class="cursivemain fs-1">Explore Top Destinations</h2>
+        </div>
+      </div>
+      <div class="row m-5">
+
+        <div class="col-md-4 col-sm-6 mb-5 d-flex justify-content-center ">
+          <div class="card" style="width:18rem;">
+            <img
+              src="/img/italy.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title cursivemain fw-bold">Take a trip to beautiful Italy.</h5>
+              <h6 class="card-subtitle mb-2 text-primary">
+                <i class="fa-solid fa-location-dot"></i> Venice, Italy</h6>
+              <p class="card-text cursive fs-5">Enjoy a beautiful Gondola ride with that special loved one!
+              </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-5 d-flex justify-content-center">
+          <div class="card" style="width:18rem;">
+            <img
+              src="/img/germany.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title cursivemain fw-bold">Explore the castles of Germany.</h5>
+              <h6 class="card-subtitle mb-2 text-primary ">
+                <i class="fa-solid fa-location-dot"></i> Neuschwanstein Castle, Germany</h6>
+              <p class="card-text cursive fs-5">Take your family and enjoy the beauty of German Architecture.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-5 d-flex justify-content-center">
+          <div class="card" style="width:18rem;">
+            <img
+              src="/img/grandcanyon.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title cursivemain fw-bold">Take in the beauty of the Grand Canyon</h5>
+              <h6 class="card-subtitle mb-2 text-primary "><i class="fa-solid fa-location-dot"></i> Grand Canyon, Arizona</h6>
+              <p class="card-text cursive fs-5">Embark on a beautiful adventure for you and your family.</p>
+
+            </div>
+          </div>
+        </div>
+
+
+     
+
+        <div class="col-md-4 col-sm-6 mb-5 d-flex justify-content-center">
+          <div class="card" style="width:18rem;">
+            <img
+              src="/img/tokyo.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title cursivemain fw-bold">Navigate your way through busy downtown Tokyo</h5>
+              <h6 class="card-subtitle mb-2 text-primary "><i class="fa-solid fa-location-dot"></i> Tokyo, Japan</h6>
+              <p class="card-text cursive fs-5">Go enjoy the view of historic temples and neon-lit skyscrapers.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-5 d-flex justify-content-center">
+          <div class="card" style="width:18rem;">
+            <img
+              src="/img/london.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title cursivemain fw-bold">Travel to the UK</h5>
+              <h6 class="card-subtitle mb-2 text-primary "><i class="fa-solid fa-location-dot"></i> London, England</h6>
+              <p class="card-text cursive fs-5">Enjoy european architecture at its finest with Big Ben.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-5 d-flex justify-content-center">
+          <div class="card" style="width:18rem;">
+            <img
+              src="/img/france.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title cursivemain fw-bold">See the Eiffel Tower</h5>
+              <h6 class="card-subtitle mb-2 text-primary "><i class="fa-solid fa-location-dot"></i> Paris, France</h6>
+              <p class="card-text cursive fs-5">Come to beautiful France where you can take that special someone to see the Eiffel Tower.</p>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- Cards End  -->
+  <hr>
+  <!-- Testimonials carousel start -->
+  <section class="mb-5">
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col d-flex flex-column m-5">
+          <h5 class="text-primary">Testimonials</h5>
+          <h2 class="cursivemain fs-1">What people say about us</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class=" bg-light border d-flex align-items-center py-5 mh-100"> <a class="carousel-control-prev text-decoration-none"
+        href="#mycarousel" role="button" data-bs-slide="prev">
+        <div class="d-flex flex-column justify-content-center me-2 ms-auto left">PREV<span
+            class="fas fa-arrow-left"></span> </div> <span class="sr-only">Previous</span>
+      </a>
+      <div class="container">
+        <div id="mycarousel" class="carousel slide " data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-bs-target="#mycarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#mycarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#mycarousel" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-lg-6 "> <img src="/img/rickybobby.png" class="d-block w-100" alt="..."> </div>
+                <div class="col-lg-6 ">
+                  <div class=" d-flex flex-column justify-content-center my-5 px-3">
+                    <p class="review text-center">"Awesome services and amazing customer service"</p>
+                    <div class="name d-flex align-items-center justify-content-center"> <span
+                        class="fas fa-minus pe-1"></span>
+                      <p class="m-0">Ricky Bobby</p>
+                    </div>
+                    <p class="job text-center">Race Car Driver</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-6 "> <img src="/img/jackskellington.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="col-lg-6 ">
+                  <div class=" d-flex flex-column justify-content-center my-5 px-3">
+                    <p class="review text-center">"Travel Anywhere makes travel easy especially around Christmas time"</p>
+                    <div class="name d-flex align-items-center justify-content-center"> <span
+                        class="fas fa-minus pe-1"></span>
+                      <p class="m-0">Jack Skellington</p>
+                    </div>
+                    <p class="job text-center">Patron Spirit of Halloween</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-6 "> <img src="/img/ricksanchez.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="col-lg-6 ">
+                  <div class=" d-flex flex-column justify-content-center my-5 px-3">
+                    <p class="review text-center">"I Travel to all kinds of weird places and Travel Anywhere makes it easy"</p>
+                    <div class="name d-flex align-items-center justify-content-center"> <span
+                        class="fas fa-minus pe-1"></span>
+                      <p class="m-0">Rick Sanchez</p>
+                    </div>
+                    <p class="job text-center">Interdimensional Traveler</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-next text-decoration-none " href="#mycarousel" role="button" data-bs-slide="next">
+        <div class="d-flex flex-column justify-content-center right ms-2 me-auto"> NEXT <span
+            class="fas fa-arrow-right"></span> </div> <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <hr>
+  <!-- services start -->
+  <section>
+    <div class="container-fluid p-5">
+      <div class="row">
+        <div class="col d-flex flex-column m-5">
+          <h5 class="text-primary">Services</h5>
+          <h2 class="cursivemain fs-1">We offer the best services in the industry</h2>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col d-inline-flex flex-column m-5 align-items-center">
+          <img src="/img/envio-03.jpg" alt="">
+          <h5 class="cursivemain fs-2 mt-5">Best Flights</h5>
+          <p class="cursive text-muted fs-5">From quick breaks to epic adventure, find the best prices across millions
+            of flights right here.</p>
+        </div>
+        <div class="col d-inline-flex flex-column m-5 align-items-center">
+          <img src="/img/vintage-world-map-vector.jpg" alt="">
+          <h5 class="cursivemain fs-2 mt-5">Planning Travel</h5>
+          <p class="cursive text-muted fs-5">We believe that travel has the power to change us. And we have the power to
+            change travel.</p>
+        </div>
+        <div class="col d-inline-flex flex-column m-5 align-items-center">
+          <img src="/img/RETRO_SIGN_FEB_19_EEZY_02.jpg" alt="">
+          <h5 class="cursivemain fs-2 mt-5">Best Hotels</h5>
+          <p class="cursive text-muted fs-5">We offer millions of rooms from all around the world. From low-cost to
+            luxury resorts.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<!-- contact form -->
+  <section>
+    <div class="container-fluid border bg-light p-5">
+      <div class="row">
+        <div class="col d-flex flex-column align-items-center">
+          <h1 class="cursivemain text-center">Want to take a cruise?</h3>
+            <p class="text-center">We are here to help you with your bookings when the time is right. Get more info,
+              pricing, and upcoming specials right in your email.</p>
+              <div>
+                <form>
+                  <div class="form-group">
+                    <label for="text">Name</label> 
+                    <input id="text" name="text" placeholder="Your name here" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="text1">Email</label> 
+                    <input id="text1" name="text1" placeholder="Your email here" type="text" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="textarea">Message</label> 
+                    <textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control"></textarea>
+                  </div> 
+                  <div class="form-group">
+                    <button name="submit" type="submit" class="btn btn-primary mt-2">Contact us</button>
+                  </div>
+                </form>
+            <!-- <input class="mx-3" type="text" placeholder="Email Address">
+            <button class="btn btn-primary p-2">Contact Us</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid border-top my-5">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-dark">
+      <!-- Grid container -->
+      <div class="container-fluid p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+              <img src="/img/LogoMakr-4h6oJ1.png" alt="">
+              <h6 class="text-uppercase font-weight-bold">
+                Travel Anywhere
+              </h6>
+              <p>
+                We take pride in being the one place you can go for all of your travel and booking needs.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+              <p>
+                <a class="text-black" href="destinations.html">Destinations</a>
+              </p>
+              <p>
+                <a class="text-black" href="hotels.html">Hotels</a>
+              </p>
+              <p>
+                <a class="text-black" href="flights.html">Flights</a>
+              </p>
+              <p>
+                <a class="text-black" href="login.html">Login</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none" />
+            
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><i class="fas fa-home mr-3"></i> Fresno, CA 93728, US</p>
+              <p><i class="fas fa-envelope mr-3"></i> d86petersen@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> 1-559-123-4567</p>
+              <p><i class="fas fa-print mr-3"></i> 1-559-123-4567</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="my-3">
+
+        <!-- Section: Copyright -->
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center">
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <!-- Copyright -->
+              <div class="p-3">
+                © 2020 Copyright:
+                <a class="text-black" href="https://github.com/D86petersen?tab=repositories">Dustin Petersen Web Design</a>
+              </div>
+              <!-- Copyright -->
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <!-- Facebook -->
+              <a class="btn btn-outline-dark btn-floating m-1" class="text-black" role="button"><i
+                  class="fab fa-facebook-f"></i></a>
+
+              <!-- Twitter -->
+              <a class="btn btn-outline-dark btn-floating m-1" class="text-white" role="button"><i
+                  class="fab fa-twitter"></i></a>
+
+              <!-- Google -->
+              <a class="btn btn-outline-dark btn-floating m-1" class="text-white" role="button"><i
+                  class="fab fa-google"></i></a>
+
+              <!-- Instagram -->
+              <a class="btn btn-outline-dark btn-floating m-1" class="text-white" role="button"><i
+                  class="fab fa-instagram"></i></a>
+            </div>
+            <!-- Grid column -->
+          </div>
+        </section>
+        <!-- Section: Copyright -->
+      </div>
+      <!-- Grid container -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>

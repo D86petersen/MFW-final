@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dancing+Script&family=Open+Sans+Condensed:wght@300&display=swap"
+    rel="stylesheet">
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/d5fdc24f4a.js" crossorigin="anonymous"></script>
+
+  <title>Travel Anywhere</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/hotels.css">
+</head>
+
+<body>
+ <!-- navbar start -->
+ <nav class="navbar navbar-light navbar-expand-xl bg-faded justify-content-center">
+  <div class="container-fluid mx-5">
+    <img src="/img/LogoMakr-4h6oJ1.png" alt="">
+    <a href="index.html" class="navbar-brand d-flex w-50 me-auto fs-4 fw-bold">Travel Anywhere</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+      <ul class="navbar-nav w-100 justify-content-between fw-bolder">
+        <li class="nav-item">
+          <a class="nav-link" href="destinations.html">Destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hotels.html">Hotels</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="flights.html">Flights</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- header start -->
+
+  <header>
+
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+  
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="/img/Video Of Hotel Lounge.mp4" type="video/mp4">
+    </video>
+  
+    <!-- The header content -->
+    <div class="container bg-transparent h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100">
+          <h1 class="display-1 text-white cursivemain1">Hotels</h1>
+          <p class="lead fs-3 text-white cursive mb-0">Finding the right hotel can be a pain. Let us find you a cozy place to rest your head.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- header end -->
+
+<!-- hotel booking form -->
+<div id="booking" class="section">
+  <div class="section-center">
+      <div class="container-fluid p-5">
+          <div class="row">
+              <div class="col-md-7 col-sm-10 col-md-push-5">
+                  <div class="booking-cta">
+                    <h5 class="text-primary">Book with us</h5>
+                      <h1 class=" text-black cursivemain1">Make your reservation today</h1>
+                      <p class="text-black cursive fs-3">Book that perfect family trip with us today. We are dedicated to making sure that your booking process is as easy and seamless as possible. Let our highly knowledgable staff help you find the right Destination, Hotel, or flight all for the best possible price. 
+                      </p>
+                  </div>
+              </div>
+              <div class="col-md-4 col-md-pull-7">
+                  <div class="booking-form">
+                      <form>
+                          <div class="form-group">
+                              <span class="form-label">Your Destination</span>
+                              <input class="form-control" type="text"
+                                  placeholder="Enter a destination or hotel name">
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-6">
+                                  <div class="form-group">
+                                      <span class="form-label">Check In</span>
+                                      <input class="form-control" type="date" required>
+                                  </div>
+                              </div>
+                              <div class="col-sm-6">
+                                  <div class="form-group">
+                                      <span class="form-label">Check out</span>
+                                      <input class="form-control" type="date" required>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-sm-4">
+                                  <div class="form-group">
+                                      <span class="form-label">Rooms</span>
+                                      <select class="form-control">
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                      </select>
+                                      <span class="select-arrow"></span>
+                                  </div>
+                              </div>
+                              <div class="col-sm-4">
+                                  <div class="form-group">
+                                      <span class="form-label">Adults</span>
+                                      <select class="form-control">
+                                          <option>1</option>
+                                          <option>2</option>
+                                          <option>3</option>
+                                      </select>
+                                      <span class="select-arrow"></span>
+                                  </div>
+                              </div>
+                              <div class="col-sm-4">
+                                  <div class="form-group">
+                                      <span class="form-label">Children</span>
+                                      <select class="form-control">
+                                          <option>0</option>
+                                          <option>1</option>
+                                          <option>2</option>
+                                      </select>
+                                      <span class="select-arrow"></span>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="form-btn">
+                              <button class="submit-btn">Check availability</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<hr>
+<!-- main content -->
+<div class="container-fluid p-5">
+  <div class="row">
+    <div class="col d-flex flex-column m-5">
+      <h5 class="text-primary">Book your hotel</h5>
+      <h2 class="cursivemain fs-1">Stay at some of the most luxurious hotels</h2>
+    </div>
+  </div>
+</div>
+
+<!-- hotel cards -->
+
+<div class="row m-5">
+
+  <div class="col-md-4 col-sm-6 mb-5 d-flex justify-content-center ">
+    <div class="card" style="width:18rem;">
+      <img
+        src="/img/hilton.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title cursivemain fw-bold">Hilton Hotels</h5>
+        
+        <p class="card-text cursive fs-5">Our hotels are all inclusive and are found in some of the worlds most popular locations.We provide meals, guest activities, and many night life options all for one simple price. 
+        </p>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-6 mb-5 d-flex justify-content-center">
+    <div class="card" style="width:18rem;">
+      <img
+        src="/img/radisson.webp"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title cursivemain fw-bold">Radisson Hotels.</h5>
+       
+        <p class="card-text cursive fs-5">Here at Radisson hotels and resorts we have some of the most spacious and luxurious room available in many locations. We design our living spaces with comfort and style in mind.</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-6 mb-5 d-flex justify-content-center">
+    <div class="card" style="width:18rem;">
+      <img
+        src="/img/ritzcarlton.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title cursivemain fw-bold">Ritz Carlton Hotels</h5>
+        
+        <p class="card-text cursive fs-5">Our resorts will take your luxury travel experience to the new level. All of our rooms have been recently remodeled to feature the best in technology and comfort.</p>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="col-md-4 col-sm-6 mb-5 d-flex justify-content-center">
+    <div class="card" style="width:18rem;">
+      <img
+        src="/img/roccoforte.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title cursivemain fw-bold">Rocco Forte Hotels</h5>
+        
+        <p class="card-text cursive fs-5">Find your perfect excape from the daily hustle and bustle of life with our luxurious Rocco Forte Suites.</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-6 mb-5 d-flex justify-content-center">
+    <div class="card" style="width:18rem;">
+      <img
+        src="/img/four-seasons-las-vegas.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title cursivemain fw-bold">Four Seasons Hotels and Resorts</h5>
+        
+        <p class="card-text cursive fs-5">No matter the purpose of your travel, you will find a luxury stay in our hotels and resorts. With fine dining right on site, enjoy a luxurious meal with friends or co-workers alike.</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-6 mb-5 d-flex justify-content-center">
+    <div class="card" style="width:18rem;">
+      <img
+        src="/img/marriot.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title cursivemain fw-bold">Marriott Hotels</h5>
+        
+        <p class="card-text cursive fs-5">Book your stay with us and we will take the stress out of planning your travel stay.</p>
+
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<div class="container-fluid border-top my-5">
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-dark">
+    <!-- Grid container -->
+    <div class="container-fluid p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+            <img src="/img/LogoMakr-4h6oJ1.png" alt="">
+            <h6 class="text-uppercase font-weight-bold">
+              Travel Anywhere
+            </h6>
+            <p>
+              We take pride in being the one place you can go for all of your travel and booking needs.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+            <p>
+              <a class="text-black" href="destinations.html">Destinations</a>
+            </p>
+            <p>
+              <a class="text-black" href="hotels.html">Hotels</a>
+            </p>
+            <p>
+              <a class="text-black" href="flights.html">Flights</a>
+            </p>
+            <p>
+              <a class="text-black" href="login.html">Login</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+          
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> Fresno, CA 93728, US</p>
+            <p><i class="fas fa-envelope mr-3"></i> d86petersen@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> 1-559-123-4567</p>
+            <p><i class="fas fa-print mr-3"></i> 1-559-123-4567</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2020 Copyright:
+              <a class="text-black" href="https://github.com/D86petersen?tab=repositories">Dustin Petersen Web Design</a>
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a class="btn btn-outline-dark btn-floating m-1" class="text-black" role="button"><i
+                class="fab fa-facebook-f"></i></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-dark btn-floating m-1" class="text-white" role="button"><i
+                class="fab fa-twitter"></i></a>
+
+            <!-- Google -->
+            <a class="btn btn-outline-dark btn-floating m-1" class="text-white" role="button"><i
+                class="fab fa-google"></i></a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-dark btn-floating m-1" class="text-white" role="button"><i
+                class="fab fa-instagram"></i></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+</div>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+
+
+
+</body>
+
+</html>
