@@ -39,7 +39,7 @@ header {
   }
   .section {
     position: relative;
-    height: 170vh;
+    height: 270vh;
 }
 
 .section .section-center {
@@ -188,7 +188,9 @@ header {
         position: relative;
         height: 100vh;
     }
-     
+   @media screen {
+       
+   }  
  }
   
   /* Media Query for devices withi coarse pointers and no hover functionality */
